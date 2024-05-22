@@ -42,28 +42,28 @@ Please hit the `POST /api/users` and `POST /api/authentications/login` first to 
     * `Authentication`: `Bearer Token`
 
 ### Account Login
-`GET /api/accounts`
-    - `payload`: -
-    - `returns`: message, code, and data
-    - `Authentication`: `Bearer Token`
-`PUT /api/accounts/:id`
-    - `payload`: userName: string, password: string
-    - `returns`: message, code, and updated data
-    - `Authentication`: `Bearer Token`
-`GET /api/accounts/:id`
-    - `payload`: -
-    - `returns`: message, code, and data
-    - `Authentication`: `Bearer Token`
-`GET /api/accounts/3days/login`
-    - `payload`: -
-    - `returns`: message, code, and data
-    - `Authentication`: `Bearer Token`
+* `GET /api/accounts`
+    * `payload`: -
+    * `returns`: message, code, and data
+    * `Authentication`: `Bearer Token`
+* `PUT /api/accounts/:id`
+    * `payload`: userName: string, password: string
+    * `returns`: message, code, and updated data
+    * `Authentication`: `Bearer Token`
+* `GET /api/accounts/:id`
+    * `payload`: -
+    * `returns`: message, code, and data
+    * `Authentication`: `Bearer Token`
+* `GET /api/accounts/3days/login`
+    * `payload`: -
+    * `returns`: message, code, and data
+    * `Authentication`: `Bearer Token`
 
 ### Account Login
-`POST /api/authentications/login`
-    - `payload`: userName: string, password: string
-    - `returns`: message, code, and data
-`PUT /api/authentications/logout`
-    - `payload`: userName: string
-    - `returns`: message, code, and updated data
-    - `Authentication`: `Bearer Token`
+* `POST /api/authentications/login`
+    * `payload`: userName: string, password: string
+    * `returns`: message, code, and data
+* `PUT /api/authentications/logout`
+    * `payload`: userName: string
+    * `returns`: message, code, and updated data
+    * `Authentication`: `Bearer Token`
