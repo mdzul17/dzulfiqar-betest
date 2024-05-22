@@ -13,6 +13,9 @@ Or if you want, I have build `Dockerfile` to run it in Docke. First you need to 
 ## Feature
 As it builds as RestAPI, there are several endpoints. Here are the description, what payload, and what returned value from those endpoints.
 
+### Notes
+Please hit the `POST /api/users` and `POST /api/authentications/login` first to get AccessToken
+
 ### User Info
 `GET /api/users`
     - `payload`: -
