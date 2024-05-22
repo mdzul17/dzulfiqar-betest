@@ -1,6 +1,6 @@
 const { nanoid } = require('nanoid');
 const bcrypt = require('bcrypt');
-const AccountsServices = require('../AccountsServices'); // Adjust the path as necessary
+const AccountsServices = require('../AccountsServices');
 
 jest.mock('nanoid');
 jest.mock('bcrypt');

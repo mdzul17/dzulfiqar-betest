@@ -1,4 +1,4 @@
-const UsersServices = require('../UsersServices'); // Adjust the path as necessary
+const UsersServices = require('../UsersServices');
 const { nanoid } = require("nanoid");
 const bcrypt = require("bcrypt");
 

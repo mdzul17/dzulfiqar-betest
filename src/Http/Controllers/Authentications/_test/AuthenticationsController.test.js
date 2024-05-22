@@ -1,4 +1,4 @@
-const AuthenticationsController = require('../AuthenticationsController'); // Adjust the path as necessary
+const AuthenticationsController = require('../AuthenticationsController');
 
 describe('AuthenticationsController', () => {
     let authenticationsServicesMock;
@@ -11,7 +11,6 @@ describe('AuthenticationsController', () => {
     let authenticationsController;
 
     beforeEach(() => {
-        // Mock dependencies
         authenticationsServicesMock = {
             addToken: jest.fn()
         };
@@ -29,7 +28,6 @@ describe('AuthenticationsController', () => {
         };
         ApiAuthMock = jest.fn((req, res, next) => next());
 
-        // Mock request and response objects
         reqMock = {
             body: { userName: 'testUser', password: 'testPassword' }
         };
@@ -38,7 +36,6 @@ describe('AuthenticationsController', () => {
             json: jest.fn(() => resMock)
         };
 
-        // Instantiate the controller
         authenticationsController = new AuthenticationsController(
             authenticationsServicesMock,
             responseMock,
