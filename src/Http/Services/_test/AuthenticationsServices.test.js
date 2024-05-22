@@ -1,4 +1,4 @@
-const AuthenticationsServices = require('../AuthenticationsServices'); // Adjust the path as necessary
+const AuthenticationsServices = require('../AuthenticationsServices');
 
 describe('AuthenticationsServices', () => {
     let authenticationModelMock;

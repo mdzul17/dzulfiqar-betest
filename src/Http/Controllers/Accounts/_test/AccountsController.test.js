@@ -10,7 +10,6 @@ describe('AccountsController', () => {
     let accountsController;
 
     beforeEach(() => {
-        // Mock dependencies
         usersServicesMock = {};
         responseMock = {
             success: jest.fn(),
@@ -24,7 +23,6 @@ describe('AccountsController', () => {
         };
         ApiAuthMock = jest.fn((req, res, next) => next());
 
-        // Mock request and response objects
         reqMock = {
             params: { id: 'someId' },
             body: {}
@@ -34,7 +32,6 @@ describe('AccountsController', () => {
             json: jest.fn(() => resMock)
         };
 
-        // Instantiate the controller
         accountsController = new AccountsController(
             usersServicesMock,
             responseMock,

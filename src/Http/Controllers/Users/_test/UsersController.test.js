@@ -1,4 +1,4 @@
-const UsersController = require('../UsersController'); // Adjust the path as necessary
+const UsersController = require('../UsersController');
 
 describe('UsersController', () => {
     let usersServicesMock;
@@ -11,7 +11,6 @@ describe('UsersController', () => {
     let usersController;
 
     beforeEach(() => {
-        // Mock dependencies
         usersServicesMock = {
             getUsers: jest.fn(),
             addUser: jest.fn(),
@@ -31,7 +30,6 @@ describe('UsersController', () => {
         ApiAuthMock = jest.fn((req, res, next) => next());
         ValidatorMock = jest.fn((req, res, next) => next());
 
-        // Mock request and response objects
         reqMock = {
             params: { id: 'someId', accountNumber: '12345', registrationNumber: '67890' },
             body: {
@@ -48,7 +46,6 @@ describe('UsersController', () => {
             json: jest.fn(() => resMock)
         };
 
-        // Instantiate the controller
         usersController = new UsersController(
             usersServicesMock,
             accountsServicesMock,
