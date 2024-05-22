@@ -3,11 +3,13 @@ const mongoose = require('mongoose')
 const accountModel = new mongoose.Schema({
     accountId: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     },
     userName: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     },
     password: {
         type: String,
@@ -20,8 +22,11 @@ const accountModel = new mongoose.Schema({
     },
     userId: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     }
 })
+
+accountModel.index({accountId: 1, lastLoginDateTime: -1})
 
 module.exports = mongoose.model('Accounts', accountModel)

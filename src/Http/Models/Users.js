@@ -23,4 +23,6 @@ const userModel = new mongoose.Schema({
     }
 })
 
+userModel.index({userId: 1, fullName: 1, accountNumber: 1, registrationNumber: 1})
+
 module.exports = mongoose.model('Users', userModel)
