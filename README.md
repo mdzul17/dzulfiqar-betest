@@ -17,29 +17,29 @@ As it builds as RestAPI, there are several endpoints. Here are the description, 
 Please hit the `POST /api/users` and `POST /api/authentications/login` first to get AccessToken
 
 ### User Info
-`GET /api/users`
-    - `payload`: -
-    - `returns`: message, code, and data
-    - `Authentication`: `Bearer Token`
-`POST /api/users`
-    - `payload`: userName: string, password: string, accountNumber: integer, emailAddress: string, registrationNumber: string, fullName: string
-    - `returns`: message, code, and data
-`PUT /api/users/:id`
-    - `payload`: accountNumber: integer, emailAddress: string, registrationNumber: string, fullName: string
-    - `returns`: message, code, and updated data
-    - `Authentication`: `Bearer Token`
-`GET /api/users/:id`
-    - `payload`: -
-    - `returns`: message, code, and data
-    - `Authentication`: `Bearer Token`
-`GET /api/users/registration-number/:registrationNumber`
-    - `payload`: -
-    - `returns`: message, code, and data
-    - `Authentication`: `Bearer Token`
-`GET /api/users/account-number/:accountNumber`
-    - `payload`: -
-    - `returns`: message, code, and data
-    - `Authentication`: `Bearer Token`
+* `GET /api/users`
+    * `payload`: -
+    * `returns`: message, code, and data
+    * `Authentication`: `Bearer Token`
+* `POST /api/users`
+    * `payload`: userName: string, password: string, accountNumber: integer, emailAddress: string, registrationNumber: string, fullName: string
+    * `returns`: message, code, and data
+* `PUT /api/users/:id`
+    * `payload`: accountNumber: integer, emailAddress: string, registrationNumber: string, fullName: string
+    * `returns`: message, code, and updated data
+    * `Authentication`: `Bearer Token`
+* `GET /api/users/:id`
+    * `payload`: -
+    * `returns`: message, code, and data
+    * `Authentication`: `Bearer Token`
+* `GET /api/users/registration-number/:registrationNumber`
+    * `payload`: -
+    * `returns`: message, code, and data
+    * `Authentication`: `Bearer Token`
+* `GET /api/users/account-number/:accountNumber`
+    * `payload`: -
+    * `returns`: message, code, and data
+    * `Authentication`: `Bearer Token`
 
 ### Account Login
 `GET /api/accounts`
